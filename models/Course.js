@@ -37,5 +37,4 @@ CourseSchema.pre("validate", function (next) {
 });
 
 const Course = mongoose.model("Course", CourseSchema);
-
 module.exports = Course;
