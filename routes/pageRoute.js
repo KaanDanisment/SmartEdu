@@ -11,5 +11,6 @@ router
   .get(redirectMiddleware, pageController.getRegisterPage);
 router.route("/login").get(pageController.getLoginPage);
 router.route("/contact").get(pageController.getContactPage);
+router.route("/contact").post(pageController.sendEmail);
 
 module.exports = router;
